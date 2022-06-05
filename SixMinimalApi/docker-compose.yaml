@@ -1,0 +1,9 @@
+﻿version: '3.8'
+services:
+  sqlserver1:
+    image: mcr.microsoft.com/azure-sql-edge:latest #mssql server is not availabe in apple m1
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Ashikur123@"
+    ports:
+      - "1433:1433"
